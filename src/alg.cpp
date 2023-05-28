@@ -14,8 +14,8 @@ BST<std::string> makeTree(const char* filename) {
     char s = file.get();
     if (s >= 'A' && s <= 'Z')
         s = s + ('a' - 'A');
-    if (sl >= 'a' && s <= 'z') {
-      result += s;
+    if (s >= 'a' && s <= 'z') {
+      res += s;
     } else {
       BSTtree.add(res);
       res.clear();
